@@ -1,14 +1,14 @@
 # Recollect delivery roadmap
 
-Selected October 15, 2026, after reading the live official brief. Separate from submitted Threshold, Relay Trust and Pivot. Final competition submission requires explicit authorization.
+Selected October 15, 2026 for Memory That Knows It Might Be Wrong. Separate from submitted Threshold, Relay Trust and Pivot.
 
-1. Define the memory contract: source, declared confidence, freshness, scope and subject. **Complete.**
-2. Implement real IndexedDB persistence, revision checks, scoped retrieval and explicit forgetting. **Complete.**
-3. Verify contradictions, stale data, privacy revocation, hallucinated citations and cross-scope access. **26 tests pass.**
-4. Verify real DeepSeek: answer supported context, clarify contradiction, abstain after expiry/revocation. **Four calls passed, 1739 reported tokens.**
-5. Test the actual browser workflow, reload and privacy controls. **Complete; see release evidence.**
-6. Publish sanitized source and anonymous demo; check a clean source checkout and public browser result. **In progress.**
-7. Prepare <=2000-character entry notes, <=300-word thesis, architecture and failure evidence. **Prepared.** Video is optional; do not represent an edited or simulated recording as an actual continuous run.
-8. Submit only after explicit authorization; preserve the real DOO confirmation. **Pending.**
+1. Define provenance, confidence, freshness, workspace and person contracts. Complete.
+2. Implement persistent IndexedDB, revision checks, scoped retrieval, correction and forgetting. Complete.
+3. Add genuine DeepSeek extraction with quoted review and natural questions with checked citations. Complete.
+4. Connect the public Site through an authenticated outbound PC worker and transient D1 queue. Complete; AI needs the operator's PC awake and connected.
+5. Verify failures, cancellations, stale responses and revoked context. 38 tests pass. Local and public end-to-end AI evidence is recorded separately.
+6. Record the actual public workflow. Continuous 90.95-second capture complete, with video scope described in failure-test.md.
+7. Publish source, live demo, video, architecture, failure evidence, thesis and entry notes. Release verification is tracked in release.md.
+8. Submit only with explicit user authorization and retain the actual DOO confirmation. Pending.
 
-The website contains the notebook and its meaningful privacy controls. Engineering notes, limitations and test results live in this repository. The public build uses local storage and deterministic retrieval decisions; genuine model behavior is verified separately and explicitly labeled.
+The website contains the notebook and useful privacy controls. Engineering evidence stays in the repository. The inspector uses deterministic policy; explicit AI controls invoke real DeepSeek while connected.

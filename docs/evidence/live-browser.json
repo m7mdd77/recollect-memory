@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-10-15T18:09:23.932588+00:00",
+  "origin": "https://recollect-memory.choggyacc.chatgpt.site",
+  "scope": "Actual Chrome UI with fictional notebook data; genuine DeepSeek",
+  "observed": {
+    "draftSavedOnlyAfterReview": true,
+    "conflictingSources": "live clarification",
+    "explicitConfirmation": "live east entrance answer citing Maya message",
+    "forgetWorkspace": "live abstention",
+    "reloadAfterForget": "zero workspace claims; live abstention again",
+    "otherWorkspace": "Personal Email preference preserved"
+  },
+  "video": {
+    "path": "site/public/walkthrough.mp4",
+    "durationSeconds": 90.95,
+    "codec": "H264",
+    "continuousTabCapture": true,
+    "audio": false,
+    "cuts": false,
+    "transcode": "constant 20fps; no narrative or scene replacement",
+    "scope": "Starts with already generated draft. Includes save, clarification, confirmation and forgetting receipts. Final abstention was below fold in capture and verified separately via browser UI."
+  },
+  "checks": {
+    "unitTests": 38,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "credentialMatches": 0,
+    "privateRuntimePaths": 0
+  }
+}

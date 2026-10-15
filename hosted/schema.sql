@@ -1,0 +1,4 @@
+CREATE TABLE ai_sessions(id TEXT PRIMARY KEY,csrf TEXT NOT NULL,expires INTEGER NOT NULL);
+CREATE TABLE ai_limits(id TEXT PRIMARY KEY,count INTEGER NOT NULL,expires INTEGER NOT NULL);
+CREATE TABLE ai_jobs(id TEXT PRIMARY KEY,owner TEXT NOT NULL,payload TEXT,status TEXT NOT NULL,created INTEGER NOT NULL,lease INTEGER NOT NULL DEFAULT 0,result TEXT);
+CREATE INDEX ai_jobs_pending ON ai_jobs(status,created);

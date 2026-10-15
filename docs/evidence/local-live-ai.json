@@ -1,0 +1,86 @@
+{
+  "verifiedAt": "2026-10-15T14:00:49.791Z",
+  "base": "http://127.0.0.1:3272",
+  "scope": "Genuine DeepSeek through the live job queue; fictional notebook only",
+  "runs": [
+    {
+      "kind": "extract",
+      "revision": 4,
+      "proposal": {
+        "claims": [
+          {
+            "key": "entrance",
+            "value": "courtyard entrance",
+            "quote": "use the courtyard entrance for deliveries."
+          }
+        ]
+      },
+      "usage": {
+        "inputTokens": 289,
+        "outputTokens": 175,
+        "cacheReadTokens": 0
+      },
+      "model": "deepseek-v4-flash"
+    },
+    {
+      "kind": "answer",
+      "revision": 5,
+      "proposal": {
+        "field": "entrance",
+        "decision": "clarify",
+        "value": null,
+        "citedIds": [],
+        "rationale": "The entrance field for Maya is in a conflict state (two blocked sources, no usable evidence), so no delivery entrance can be confirmed. Delivery window (ready) and contact channel (missing) do not answer the entrance question. Please clarify which entrance the courier should use."
+      },
+      "usage": {
+        "inputTokens": 540,
+        "outputTokens": 110,
+        "cacheReadTokens": 0
+      },
+      "model": "deepseek-v4-flash"
+    },
+    {
+      "kind": "answer",
+      "revision": 6,
+      "proposal": {
+        "field": "entrance",
+        "decision": "answer",
+        "value": "courtyard entrance",
+        "citedIds": [
+          "60eb78db-9d1c-42e2-8aef-eb5de3522a1b"
+        ],
+        "rationale": "Maya's entrance field is ready (revision 6): evidence 60eb78db states 'use the courtyard entrance for deliveries' with full confidence and is fresh until 1792677649792, so the courier should use the courtyard entrance."
+      },
+      "usage": {
+        "inputTokens": 626,
+        "outputTokens": 165,
+        "cacheReadTokens": 0
+      },
+      "model": "deepseek-v4-flash"
+    },
+    {
+      "kind": "answer",
+      "revision": 7,
+      "proposal": {
+        "field": "entrance",
+        "decision": "abstain",
+        "value": null,
+        "citedIds": [],
+        "rationale": "The entrance field for Maya (scope cedar, revision 7) is in state 'missing' with requiredDecision 'abstain' and no evidence. No supported value exists, so no entrance can be provided."
+      },
+      "usage": {
+        "inputTokens": 466,
+        "outputTokens": 106,
+        "cacheReadTokens": 0
+      },
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "outcomes": {
+    "draftRequiresReview": true,
+    "contradiction": "clarify",
+    "correction": "cited courtyard entrance",
+    "revocation": "abstain",
+    "forgottenValueAbsent": true
+  }
+}

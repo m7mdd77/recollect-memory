@@ -6,3 +6,11 @@ outputs/
 site/.sites-runtime/
 site/.git/
 *.log
+
+site/dist/
+site/.wrangler/
+site/.vinext/
+*.tsbuildinfo
+
+site/.dev.vars
+site/.env*
