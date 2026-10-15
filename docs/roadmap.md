@@ -9,6 +9,6 @@ Selected October 15, 2026 for Memory That Knows It Might Be Wrong. Separate from
 5. Verify failures, cancellations, stale responses and revoked context. 38 tests pass. Local and public end-to-end AI evidence is recorded separately.
 6. Record the actual public workflow. Continuous 90.95-second capture complete, with video scope described in failure-test.md.
 7. Publish source, live demo, video, architecture, failure evidence, thesis and entry notes. Release verification is tracked in release.md.
-8. Submit only with explicit user authorization and retain the actual DOO confirmation. Pending.
+8. Submit only with explicit user authorization and retain the actual DOO confirmation. Complete on October 15 after the user requested submission; DOO confirmed “Entry saved.”
 
 The website contains the notebook and useful privacy controls. Engineering evidence stays in the repository. The inspector uses deterministic policy; explicit AI controls invoke real DeepSeek while connected.

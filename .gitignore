@@ -14,3 +14,7 @@ site/.vinext/
 
 site/.dev.vars
 site/.env*
+
+# Local submission evidence contains browser profile information.
+docs/evidence/doo-entry-saved.jpg
+docs/evidence/doo-submission-receipt.json

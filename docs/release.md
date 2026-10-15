@@ -12,4 +12,4 @@ Actual Chrome interaction also verified save after review, live clarification, a
 
 The final deployment archive contains 66 files, includes the walkthrough, and passed exact active-credential and private-runtime-path scans. The public GitHub payload was scanned separately. The Site stores only a worker service credential; a temporary earlier service credential was removed and rotated before this live release. The AgentRouter key was never included in that source.
 
-Entry notes (1774 characters), a thesis under 300 words, architecture and failure evidence are prepared. No Recollect competition entry has been submitted.
+Entry notes (1774 characters), a thesis under 300 words, architecture and failure evidence are prepared. Recollect was submitted on October 15, 2026 after the user explicitly requested submission. DOO confirmed “Entry saved” and changed the form to “Update your entry.” The receipt and screenshot are retained locally because they contain browser profile information. This confirms a saved entry, not a judging result.
