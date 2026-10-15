@@ -1,0 +1,8 @@
+.env
+data/
+node_modules/
+.sites-runtime/
+outputs/
+site/.sites-runtime/
+site/.git/
+*.log

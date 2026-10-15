@@ -1,0 +1,131 @@
+{
+  "verifiedAt": "2026-10-15T10:30:23.719Z",
+  "scope": "Genuine DeepSeek requests using fictional sample memory only",
+  "runs": [
+    {
+      "scenario": "supported",
+      "retrievalState": "ready",
+      "context": {
+        "scope": "cedar",
+        "subject": "maya",
+        "field": "entrance",
+        "asOf": 1792060223720,
+        "revision": 4,
+        "state": "ready",
+        "requiredDecision": "answer",
+        "evidence": [
+          {
+            "id": "35b3957b-4360-4c5c-8248-60f0cdb1535b",
+            "value": "North entrance",
+            "source": "Client brief",
+            "quote": "North entrance",
+            "reportedConfidence": 0.95,
+            "effectiveConfidence": 0.95,
+            "observedAt": 1792060223720,
+            "freshUntil": 1792665023720
+          }
+        ],
+        "blockedCount": 0
+      },
+      "model": "deepseek-v4-flash",
+      "proposal": {
+        "decision": "answer",
+        "value": "North entrance",
+        "citedIds": [
+          "35b3957b-4360-4c5c-8248-60f0cdb1535b"
+        ],
+        "rationale": "Evidence record 35b3957b for scope cedar, subject maya, field entrance reports value \"North entrance\" from Client brief at confidence 0.95, effective 0.95, observed at 1792060223720 and fresh until 1792665023720, with no blocked records. Value copied exactly from that source."
+      },
+      "usage": {
+        "inputTokens": 372,
+        "outputTokens": 148,
+        "cacheReadTokens": 0
+      },
+      "revision": 4
+    },
+    {
+      "scenario": "conflicting",
+      "retrievalState": "conflict",
+      "context": {
+        "scope": "cedar",
+        "subject": "maya",
+        "field": "entrance",
+        "asOf": 1792060227471,
+        "revision": 5,
+        "state": "conflict",
+        "requiredDecision": "clarify",
+        "evidence": [],
+        "blockedCount": 2
+      },
+      "model": "deepseek-v4-flash",
+      "proposal": {
+        "decision": "clarify",
+        "value": null,
+        "citedIds": [],
+        "rationale": "The record for cedar/Maya/entrance is in a conflict state with no available evidence (blockedCount 2), so no supported value can be confirmed. Clarification is needed to resolve the conflicting sources before answering."
+      },
+      "usage": {
+        "inputTokens": 296,
+        "outputTokens": 103,
+        "cacheReadTokens": 0
+      },
+      "revision": 5
+    },
+    {
+      "scenario": "expired",
+      "retrievalState": "stale",
+      "context": {
+        "scope": "cedar",
+        "subject": "maya",
+        "field": "entrance",
+        "asOf": 1793269830091,
+        "revision": 5,
+        "state": "stale",
+        "requiredDecision": "abstain",
+        "evidence": [],
+        "blockedCount": 1
+      },
+      "model": "deepseek-v4-flash",
+      "proposal": {
+        "decision": "abstain",
+        "value": null,
+        "citedIds": [],
+        "rationale": "No admissible evidence was provided for subject 'maya', field 'entrance' (revision 5, state 'stale'); one source is blocked. With no supported value available, no answer or citation can be given."
+      },
+      "usage": {
+        "inputTokens": 297,
+        "outputTokens": 142,
+        "cacheReadTokens": 0
+      },
+      "revision": 5
+    },
+    {
+      "scenario": "revoked",
+      "retrievalState": "missing",
+      "context": {
+        "scope": "cedar",
+        "subject": "maya",
+        "field": "entrance",
+        "asOf": 1792060233040,
+        "revision": 5,
+        "state": "missing",
+        "requiredDecision": "abstain",
+        "evidence": [],
+        "blockedCount": 0
+      },
+      "model": "deepseek-v4-flash",
+      "proposal": {
+        "decision": "abstain",
+        "value": null,
+        "citedIds": [],
+        "rationale": "No evidence available (empty evidence set, blockedCount 0) for cedar/maya/entrance as of the given time; state is missing, so no supported value can be provided."
+      },
+      "usage": {
+        "inputTokens": 296,
+        "outputTokens": 85,
+        "cacheReadTokens": 0
+      },
+      "revision": 5
+    }
+  ]
+}

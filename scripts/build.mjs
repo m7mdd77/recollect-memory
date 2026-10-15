@@ -1,0 +1,2 @@
+import{mkdirSync,cpSync,copyFileSync,readFileSync,writeFileSync}from'node:fs';
+mkdirSync('site/dist',{recursive:true});cpSync('web','site/dist',{recursive:true});copyFileSync('src/memory.js','site/dist/memory.js');let manifest=JSON.parse(readFileSync('site/.openai/hosting.json','utf8'));manifest.static={directory:'dist'};writeFileSync('site/.openai/hosting.json',JSON.stringify(manifest,null,2)+'\n');console.log('Recollect static site built; no credentials or local AI state included.');
