@@ -1,0 +1,41 @@
+{
+  "verifiedAt": "2026-10-15T10:38:04.834Z",
+  "publicDemo": "https://recollect-memory.choggyacc.chatgpt.site",
+  "source": "https://github.com/m7mdd77/recollect-memory",
+  "automatedTests": 26,
+  "cleanSourceArchiveTests": 26,
+  "realAI": {
+    "cases": [
+      "supported -> answer",
+      "conflicting -> clarify",
+      "expired -> abstain",
+      "revoked -> abstain"
+    ],
+    "reportedInputOutputTokens": 1739,
+    "additionalLocalBrowserCase": "Conflict correctly requested clarification; no memory mutation."
+  },
+  "localBrowserChecks": [
+    "conflict blocks a value",
+    "explicit correction selects courtyard",
+    "correction persists after reload",
+    "14-day advance blocks expired memory",
+    "workspace forgetting remains missing after reload",
+    "Personal preference remains supported",
+    "privacy receipts contain no remembered value or source"
+  ],
+  "publicBrowserChecks": [
+    "anonymous page opens",
+    "IndexedDB conflict survives reload",
+    "forgetting courtyard removes its card after reload",
+    "explicit new fictional observation creates uncertainty again"
+  ],
+  "phoneWidth": 390,
+  "horizontalOverflow": false,
+  "publication": {
+    "siteVersion": 1,
+    "hostedSourceCommit": "954d2fdb6a06b0502d9bd50c00255e8bb50c11f5",
+    "deploymentId": "appgdep_6ad0ac79ac7881919c5a75006d8fa5ce"
+  },
+  "competitionSubmitted": false,
+  "video": "Not recorded; optional in official submission checklist"
+}

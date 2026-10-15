@@ -2,6 +2,10 @@
 
 Mission: [Memory That Knows It Might Be Wrong](https://build.doo.ooo/challenges/memory-might-be-wrong).
 
+Live demo: https://recollect-memory.choggyacc.chatgpt.site
+
+Public source: https://github.com/m7mdd77/recollect-memory
+
 A memory inspector that keeps provenance, confidence, freshness and scope attached to every claim. It withholds contradictory, stale or weak memory, asks for clarification and lets the owner confirm or forget facts. This is a memory layer, not vector search with a confidence label added afterward.
 
 ## Run
