@@ -1,3 +1,5 @@
+Current runtime: **GPT 6.1 Sol through AgentRouter**. See [configuration and verification](docs/sol-migration.md). Dated DeepSeek recordings remain historical evidence.
+
 # Recollect — Memory with receipts
 
 Mission: [Memory That Knows It Might Be Wrong](https://build.doo.ooo/challenges/memory-might-be-wrong).
