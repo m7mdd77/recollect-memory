@@ -1,0 +1,45 @@
+{
+  "verifiedAt": "2026-10-28T07:30:49.965Z",
+  "provider": "Cerebras",
+  "model": "qwen-3.8-27b",
+  "scope": "Fresh genuine proposal-only migration checks on synthetic data. Existing operator allowance directories retained. No external actions or cached answers.",
+  "tests": {
+    "passed": 44,
+    "failed": 0,
+    "scope": "Local regression and mocked provider boundary tests; independent from the genuine call below."
+  },
+  "local": {
+    "name": "recollect",
+    "ok": true,
+    "model": "qwen-3.8-27b",
+    "usage": {
+      "inputTokens": 384,
+      "outputTokens": 118,
+      "cacheReadTokens": 0
+    },
+    "decision": "answer",
+    "elapsedMs": 457
+  },
+  "publicVerification": {
+    "name": "recollect",
+    "ok": true,
+    "model": "qwen-3.8-27b",
+    "usage": {
+      "inputTokens": 648,
+      "outputTokens": 121,
+      "cacheReadTokens": 0
+    },
+    "decision": "answer",
+    "automaticMemoryWrites": 0,
+    "elapsedMs": 8958
+  },
+  "deployment": {
+    "name": "recollect",
+    "project_id": "appgprj_6ad0aa2a1b4c8191bcd648ea87fb2388",
+    "version_id": "appgprj_6ad0aa2a1b4c8191bcd648ea87fb2388~appgver_f0759ab0dcbc81918915273de4a2a024",
+    "deployment_id": "appgdep_6ae1a8d182c08191a490168532fb17c5",
+    "status": "succeeded",
+    "url": "https://recollect-memory.choggyacc.chatgpt.site",
+    "commit_sha": "d0102f0d6694b245726d11c813de609ad838c155"
+  }
+}

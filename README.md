@@ -1,4 +1,4 @@
-Current runtime: **GPT 6.1 Sol through AgentRouter**. See [configuration and verification](docs/sol-migration.md). Dated DeepSeek recordings remain historical evidence.
+Current runtime: **Qwen 3.8 27B through Cerebras**. See [configuration and fresh verification](docs/cerebras-migration.md). Earlier provider recordings and evidence remain dated history.
 
 # Recollect — Memory with receipts
 
@@ -33,13 +33,13 @@ Open http://127.0.0.1:3271. The hosted version uses the same pure memory engine 
 
 The inspector, export, deterministic answer and optional model context all use the same vault. Writes commit through an IndexedDB read/write transaction with revision checks. A second tab is notified after a commit; conflicting stale-tab writes are rejected.
 
-## Genuine DeepSeek
+## Genuine AI
 
-The public demo invokes DeepSeek v4 Flash through an outbound worker on the operator's PC and the genuine supported Claude Code client. The provider key stays on the PC. AI is available while that worker is connected; the notebook and deterministic inspector also work offline. The interface shows the actual connection state.
+The public demo invokes Qwen 3.8 27B through Cerebras and an outbound worker on the operator's PC. The provider key stays on the PC. AI is available while that worker is connected; the notebook and deterministic inspector also work offline. The interface shows the actual connection state.
 
 Paste a note and source, request a draft, inspect its exact supporting quotes, then explicitly save selected memories. Drafting alone cannot write. Ask a natural-language question: the model chooses an allowlisted field, and independent validation checks its decision, exact value and citations. Contradictory, expired, weak or forgotten values are omitted from model context. The question itself is user-supplied text and is still transmitted.
 
-For local AI, copy `.env.example` to ignored `.env`, or reuse the existing private configuration through `node --env-file=../decision-engine/.env server.js`. To connect the public application, run `node --env-file=../decision-engine/.env pc-worker.js` after provisioning its separate service credential in the Site environment. Never commit either credential. The Site contains only the worker service credential, not the AgentRouter key.
+For local AI, copy `.env.example` to ignored `.env`, or reuse the existing private configuration through `node --env-file=../decision-engine/.env server.js`. To connect the public application, run `node --env-file=../decision-engine/.env pc-worker.js` after provisioning its separate service credential in the Site environment. Never commit either credential. The Site contains only the worker service credential, not the Cerebras key.
 
 Operator-only verification commands make paid requests against fictional facts. `npm run verify:ai` records the original four local cases (1739 reported input/output tokens). `node scripts/verify-live.mjs <base-url>` exercises the complete hosted queue and worker: quoted draft without automatic writes → conflicting question → explicitly confirmed cited answer → abstention after forgetting. Local Worker verification used 2477 reported tokens; public verification used 2391. See `docs/evidence/local-live-ai.json` and `public-live-ai.json`. Unit tests use injected responses and are not provider proof.
 
