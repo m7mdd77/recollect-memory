@@ -1,0 +1,46 @@
+{
+  "at": "2026-11-02T09:16:57.225Z",
+  "provider": "Cerebras",
+  "model": "gpt-oss-120b",
+  "credentialSource": "New operator-selected private key file; no credential contents or personal file paths published.",
+  "tests": {
+    "passed": 44,
+    "failed": 0,
+    "scope": "Local regression tests with injected provider responses; separate from genuine model evidence."
+  },
+  "local": {
+    "name": "recollect",
+    "ok": true,
+    "model": "gpt-oss-120b",
+    "usage": {
+      "inputTokens": 334,
+      "outputTokens": 113,
+      "cacheReadTokens": 0
+    },
+    "decision": "answer",
+    "elapsedMs": 857
+  },
+  "previousLocalAttempts": [],
+  "publicVerification": {
+    "name": "recollect",
+    "ok": true,
+    "model": "gpt-oss-120b",
+    "usage": {
+      "inputTokens": 565,
+      "outputTokens": 132,
+      "cacheReadTokens": 0
+    },
+    "decision": "answer",
+    "automaticMemoryWrites": 0,
+    "elapsedMs": 8861
+  },
+  "deployment": {
+    "name": "recollect",
+    "project_id": "appgprj_6ad0aa2a1b4c8191bcd648ea87fb2388",
+    "version_id": "appgprj_6ad0aa2a1b4c8191bcd648ea87fb2388~appgver_fa20136fa96c819188fffb98c37baae1",
+    "deployment_id": "appgdep_6ae85373da348191b93fc6635d95fbe7",
+    "status": "succeeded",
+    "url": "https://recollect-memory.choggyacc.chatgpt.site",
+    "commit_sha": "089507d22e86d33e9146acc770b1b56ba6413d28"
+  }
+}
