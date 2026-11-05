@@ -1,4 +1,4 @@
-Current runtime: **GPT-OSS 120B through Cerebras**, using the operator's newly selected private key. See [current verification and setup](docs/gpt-oss-migration.md). Earlier Qwen, Sol, Astra and DeepSeek evidence remains dated history.
+Current runtime: **Qwen 3.8 27B through Cerebras**, selected on 5 November 2026 with the current private key. See [current setup and verification](docs/qwen-nov5-migration.md). Earlier model records and recordings remain dated history.
 
 # Recollect — Memory with receipts
 
@@ -35,7 +35,7 @@ The inspector, export, deterministic answer and optional model context all use t
 
 ## Genuine AI
 
-The public demo invokes GPT-OSS 120B through Cerebras and an outbound worker on the operator's PC. The provider key stays on the PC. AI is available while that worker is connected; the notebook and deterministic inspector also work offline. The interface shows the actual connection state.
+The public demo invokes Qwen 3.8 27B through Cerebras and an outbound worker on the operator's PC. The provider key stays on the PC. AI is available while that worker is connected; the notebook and deterministic inspector also work offline. The interface shows the actual connection state.
 
 Paste a note and source, request a draft, inspect its exact supporting quotes, then explicitly save selected memories. Drafting alone cannot write. Ask a natural-language question: the model chooses an allowlisted field, and independent validation checks its decision, exact value and citations. Contradictory, expired, weak or forgotten values are omitted from model context. The question itself is user-supplied text and is still transmitted.
 

@@ -1,0 +1,46 @@
+{
+  "at": "2026-11-05T06:58:38.315Z",
+  "provider": "Cerebras",
+  "model": "qwen-3.8-27b",
+  "currentPrivateKeyReferencePreserved": true,
+  "tests": {
+    "passed": 44,
+    "failed": 0,
+    "scope": "Local regression tests with injected responses, separate from actual model calls."
+  },
+  "local": {
+    "name": "recollect",
+    "ok": true,
+    "model": "qwen-3.8-27b",
+    "usage": {
+      "inputTokens": 380,
+      "outputTokens": 73,
+      "cacheReadTokens": 0
+    },
+    "decision": "answer",
+    "elapsedMs": 1028
+  },
+  "previousLocalAttempts": [],
+  "publicVerification": {
+    "name": "recollect",
+    "ok": true,
+    "model": "qwen-3.8-27b",
+    "usage": {
+      "inputTokens": 642,
+      "outputTokens": 83,
+      "cacheReadTokens": 0
+    },
+    "decision": "answer",
+    "automaticMemoryWrites": 0,
+    "elapsedMs": 5911
+  },
+  "deployment": {
+    "name": "recollect",
+    "project_id": "appgprj_6ad0aa2a1b4c8191bcd648ea87fb2388",
+    "version_id": "appgprj_6ad0aa2a1b4c8191bcd648ea87fb2388~appgver_2f4ab19d34c08191864edf553ea53dfb",
+    "deployment_id": "appgdep_6aec27c17b98819188159af38015e295",
+    "status": "succeeded",
+    "url": "https://recollect-memory.choggyacc.chatgpt.site",
+    "commit_sha": "ab47ec015cb2e2c0196e4c7bff53eb600fa8232e"
+  }
+}
